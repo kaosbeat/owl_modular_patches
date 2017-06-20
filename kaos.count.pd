@@ -16,13 +16,14 @@
 #X obj 77 247 f 0;
 #X obj 128 260 + 1;
 #X obj 52 275 sel 8;
-#X floatatom 79 338 5 0 0 0 - - -, f 5;
-#X obj 57 189 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X floatatom 99 339 5 0 0 0 - - -, f 5;
+#X obj 55 339 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X msg 47 248 1;
-#X obj 131 129 inlet;
-#X obj 56 336 bng 20 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+#X obj 131 126 inlet;
+#X obj 76 337 bng 20 250 50 0 empty empty empty 17 7 0 10 -4034 -1
 -1;
+#X obj 25 128 inlet;
 #X connect 0 0 2 0;
 #X connect 1 0 2 0;
 #X connect 2 0 15 1;
@@ -34,6 +35,7 @@
 #X connect 8 0 7 0;
 #X connect 9 0 12 1;
 #X connect 10 0 11 0;
+#X connect 10 0 17 0;
 #X connect 11 0 8 0;
 #X connect 11 1 5 0;
 #X connect 11 2 8 0;
@@ -49,4 +51,5 @@
 #X connect 17 0 12 0;
 #X connect 18 0 13 1;
 #X connect 19 0 9 0;
+#X connect 21 0 17 0;
 #X coords 0 -1 1 1 85 50 1 50 310;
