@@ -1,0 +1,18 @@
+#N canvas 1536 349 450 300 10;
+#X obj 144 56 ctlin 1;
+#X obj 150 179 random 20;
+#X obj 210 232 ctlout 1;
+#X obj 148 232 ctlout 0;
+#X obj 273 232 ctlout 2;
+#X obj 335 232 ctlout 3;
+#X obj 210 207 + 20;
+#X obj 274 206 + 40;
+#X obj 337 206 + 60;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 1 0 6 0;
+#X connect 1 0 7 0;
+#X connect 1 0 8 0;
+#X connect 6 0 2 0;
+#X connect 7 0 4 0;
+#X connect 8 0 5 0;
