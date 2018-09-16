@@ -1,4 +1,4 @@
-#N canvas 1622 625 450 300 10;
+#N canvas 617 589 450 300 10;
 #X obj 204 92 random 20;
 #X obj 210 207 + 20;
 #X obj 274 206 + 40;
@@ -16,6 +16,7 @@
 #X obj 202 233 ctlout 1 2;
 #X obj 273 232 ctlout 2 2;
 #X obj 344 232 ctlout 3 2;
+#X obj 107 61 hv.osc saw;
 #X connect 0 0 1 0;
 #X connect 0 0 2 0;
 #X connect 0 0 3 0;
