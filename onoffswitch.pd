@@ -3,13 +3,13 @@
 -1 -1;
 #X obj 681 659 s \$0-trigger;
 #X obj 681 117 hsl 128 15 0 1 0 0 empty empty Gain -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 6200 1;
 #X obj 683 209 hsl 128 15 0 1 0 0 empty empty Indice -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 6500 1;
 #X obj 681 314 hsl 128 15 0 1 0 0 empty empty Attack -2 -8 0 10 -262144
--1 -1 8900 1;
+-1 -1 5100 1;
 #X obj 684 499 hsl 128 15 0 1 0 0 empty empty exp -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 12700 1;
 #X obj 688 525 r Channel-E;
 #X obj 715 589 r Channel-Push;
 #X obj 715 617 sel 1;
@@ -18,7 +18,7 @@
 #X obj 691 336 r Channel-C;
 #X obj 689 431 r Channel-D;
 #X obj 682 408 hsl 128 15 0 1 0 0 empty empty Mrelease -2 -8 0 10 -262144
--1 -1 12200 1;
+-1 -1 6300 1;
 #X obj 692 142 r Channel-A;
 #X obj 682 171 s \$0-gain;
 #X obj 682 553 s \$0-exp;
