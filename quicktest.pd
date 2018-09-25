@@ -1,0 +1,51 @@
+#N canvas 863 453 823 545 10;
+#X obj 125 119 adc~;
+#X obj 176 123 osc~ 10;
+#X obj 123 180 *~;
+#X obj 123 243 dac~;
+#X obj 417 498 bng 25 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 417 568 s \$0-trigger;
+#X obj 417 26 hsl 128 15 0 1 0 0 empty empty Gain -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 419 118 hsl 128 15 0 1 0 0 empty empty Indice -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 417 223 hsl 128 15 0 1 0 0 empty empty Attack -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 420 408 hsl 128 15 0 1 0 0 empty empty exp -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 424 434 r Channel-E;
+#X obj 451 498 r Channel-Push;
+#X obj 451 526 sel 1;
+#X obj 417 179 s \$0-indice;
+#X obj 431 143 r Channel-B;
+#X obj 427 245 r Channel-C;
+#X obj 425 340 r Channel-D;
+#X obj 418 317 hsl 128 15 0 1 0 0 empty empty Mrelease -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 428 51 r Channel-A;
+#X obj 418 80 s \$0-gain;
+#X obj 418 462 s \$0-exp;
+#X obj 418 279 s \$0-Attack;
+#X obj 418 368 s \$0-Release;
+#X obj 227 50 r \$0-Release;
+#X obj 231 90 * 50;
+#X connect 0 0 2 0;
+#X connect 1 0 2 1;
+#X connect 2 0 3 0;
+#X connect 2 0 3 1;
+#X connect 4 0 5 0;
+#X connect 6 0 19 0;
+#X connect 7 0 13 0;
+#X connect 8 0 21 0;
+#X connect 9 0 20 0;
+#X connect 10 0 20 0;
+#X connect 11 0 12 0;
+#X connect 12 0 5 0;
+#X connect 14 0 13 0;
+#X connect 15 0 21 0;
+#X connect 16 0 22 0;
+#X connect 17 0 22 0;
+#X connect 18 0 19 0;
+#X connect 23 0 24 0;
+#X connect 24 0 1 1;
