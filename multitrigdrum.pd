@@ -1,6 +1,4 @@
 #N canvas 2181 154 1058 546 10;
-#X obj 388 38 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 5800 1;
 #X obj 37 196 r Channel-A;
 #N canvas 172 280 984 516 kick 1;
 #X obj 612 334 osc~;
@@ -41,14 +39,6 @@
 #X connect 16 0 6 0;
 #X restore 62 331 pd kick;
 #X obj 61 389 dac~;
-#X obj 378 78 r Channel-C;
-#X obj 398 129 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 8200 1;
-#X obj 356 98 * 15;
-#X obj 250 258 noteout;
-#X obj 271 201 * 127;
-#X obj 237 227 f 1;
-#X obj 40 28 loadbang;
 #N canvas 736 229 450 300 cvtrig 1;
 #X obj 123 105 sel 1;
 #X obj 119 201 spigot;
@@ -70,16 +60,7 @@
 #X connect 6 0 0 0;
 #X connect 7 0 6 0;
 #X restore 46 282 pd cvtrig;
-#X connect 0 0 8 0;
-#X connect 1 0 8 0;
-#X connect 1 0 11 0;
-#X connect 2 0 3 0;
-#X connect 2 0 3 1;
-#X connect 4 0 6 0;
-#X connect 5 0 6 0;
-#X connect 6 0 2 1;
-#X connect 8 0 7 1;
-#X connect 8 0 9 0;
-#X connect 9 0 7 0;
-#X connect 10 0 9 0;
-#X connect 11 0 2 0;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 1 0 2 1;
+#X connect 3 0 1 0;
