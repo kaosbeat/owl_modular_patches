@@ -70,7 +70,7 @@
 #X connect 6 0 2 1;
 #X connect 7 0 1 0;
 #X connect 8 0 0 0;
-#X restore 155 351 pd audiotrig;
+#X restore 157 346 pd audiotrig;
 #N canvas 736 229 450 300 cvtrig 0;
 #X obj 123 105 sel 1;
 #X obj 119 201 spigot;
@@ -259,7 +259,7 @@
 #X connect 7 0 6 0;
 #X restore 708 353 pd cvtrig;
 #X obj 709 313 r Channel-E;
-#N canvas 178 298 450 300 blocks 0;
+#N canvas 178 298 924 455 blocks 1;
 #X obj -9 140 cos~;
 #X obj 14 195 *~;
 #X obj 66 180 line~;
@@ -319,6 +319,10 @@
 #X connect 6 0 3 0;
 #X connect 8 0 2 0;
 #X restore 796 406 pd blocks;
+#X text 592 270 CV/gate tester based on patch by twitter.com/manwithfeathers
+;
+#X obj 151 514 noteout 1;
+#X msg 159 481 120;
 #X connect 0 0 7 0;
 #X connect 0 1 8 0;
 #X connect 1 0 5 0;
@@ -329,6 +333,7 @@
 #X connect 6 0 3 1;
 #X connect 7 0 22 0;
 #X connect 8 0 21 0;
+#X connect 8 0 26 0;
 #X connect 9 0 11 0;
 #X connect 10 0 6 0;
 #X connect 11 0 3 0;
@@ -351,3 +356,4 @@
 #X connect 22 0 3 1;
 #X connect 23 0 3 0;
 #X connect 23 0 3 1;
+#X connect 26 0 25 0;
