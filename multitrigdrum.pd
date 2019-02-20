@@ -1,6 +1,6 @@
 #N canvas 2086 83 1058 546 10;
-#X obj 239 50 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 11600 1;
+#X obj 388 38 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5800 1;
 #X obj 99 55 r Channel-A;
 #N canvas 2513 168 450 300 cvtrigIn 1;
 #N canvas 2168 250 450 300 delta 0;
@@ -98,25 +98,27 @@
 #X connect 14 0 11 0;
 #X connect 15 0 9 0;
 #X connect 16 0 6 0;
-#X restore 72 228 pd kick;
-#X obj 71 286 dac~;
+#X restore 62 331 pd kick;
+#X obj 61 389 dac~;
 #X floatatom 138 132 5 0 0 0 - - -, f 5;
-#X obj 243 91 r Channel-C;
-#X obj 263 142 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 378 78 r Channel-C;
+#X obj 398 129 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 8200 1;
-#X obj 221 111 * 15;
-#X obj 168 269 noteout;
-#X obj 189 212 * 127;
-#X obj 155 238 f 1;
+#X obj 356 98 * 15;
+#X obj 250 258 noteout;
+#X obj 271 201 * 127;
+#X obj 237 227 f 1;
 #X obj 40 28 loadbang;
 #X obj 61 192 spigot;
 #X obj 93 169 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 319 252 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 111 125 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 321 276 pipe 100;
-#X msg 324 303 1;
+#X msg 116 176 1;
 #X msg 25 191 0;
+#X obj 44 125 select 1;
+#X msg 42 146 clear;
+#X obj 108 147 pipe 100;
 #X connect 0 0 2 0;
 #X connect 0 0 10 0;
 #X connect 1 0 2 0;
@@ -134,9 +136,12 @@
 #X connect 11 0 9 0;
 #X connect 12 0 11 0;
 #X connect 13 0 3 0;
-#X connect 13 0 18 0;
+#X connect 13 0 17 0;
 #X connect 14 0 13 1;
-#X connect 15 0 16 0;
-#X connect 16 0 17 0;
+#X connect 14 0 18 0;
+#X connect 15 0 20 0;
+#X connect 16 0 14 0;
 #X connect 17 0 14 0;
-#X connect 18 0 14 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 20 0 16 0;
