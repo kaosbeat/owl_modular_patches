@@ -1,0 +1,11 @@
+#N canvas 2681 384 450 300 10;
+#X obj 152 75 r Channel-Push;
+#X obj 20 77 r Channel-A;
+#X obj 22 197 s Channel-Push;
+#X obj 146 176 ./noteout 1;
+#X obj 236 194 noteout;
+#X obj 143 117 * 127;
+#X connect 0 0 5 0;
+#X connect 1 0 2 0;
+#X connect 1 0 3 0;
+#X connect 5 0 3 1;
