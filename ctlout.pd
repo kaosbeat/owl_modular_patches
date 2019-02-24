@@ -1,0 +1,11 @@
+#N canvas 2138 132 324 383 10;
+#X text 113 17 data1 data0 channel command port;
+#X obj 166 205 inlet;
+#X obj 140 175 inlet;
+#X obj 120 144 inlet;
+#X obj 117 251 pack f f f f f;
+#X obj 117 296 s __hv_ctlout @hv_param;
+#X connect 1 0 4 2;
+#X connect 2 0 4 1;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
