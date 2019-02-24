@@ -166,7 +166,7 @@
 #X msg 163 413 0.2;
 #X msg 288 403 0.3;
 #X msg 385 404 0.4;
-#X msg 507 392 0.5;
+#X msg 468 403 0.5, f 5;
 #X msg 622 400 0.6;
 #X msg 710 432 0.7;
 #X msg 817 464 0.8;
@@ -185,7 +185,10 @@
 #X msg 154 92 127;
 #X msg 99 90 0;
 #X obj 125 147 ctlout 26;
-#X obj 598 456 change;
+#X obj 633 431 change;
+#X obj 542 425 change;
+#X msg 514 450 0.5, f 5;
+#X msg 565 456 127;
 #X connect 0 0 6 0;
 #X connect 0 1 7 0;
 #X connect 1 0 5 0;
@@ -200,6 +203,7 @@
 #X connect 10 0 22 0;
 #X connect 11 0 23 0;
 #X connect 12 0 10 0;
+#X connect 12 0 41 0;
 #X connect 13 0 11 0;
 #X connect 13 0 40 0;
 #X connect 14 0 24 0;
@@ -208,7 +212,6 @@
 #X connect 19 0 17 0;
 #X connect 20 0 17 0;
 #X connect 21 0 17 0;
-#X connect 22 0 17 0;
 #X connect 24 0 17 0;
 #X connect 25 0 17 0;
 #X connect 26 0 25 0;
@@ -223,3 +226,7 @@
 #X connect 37 0 39 0;
 #X connect 38 0 39 0;
 #X connect 40 0 17 0;
+#X connect 41 0 42 0;
+#X connect 41 0 43 0;
+#X connect 42 0 17 0;
+#X connect 43 0 17 0;
