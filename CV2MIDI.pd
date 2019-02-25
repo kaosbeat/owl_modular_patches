@@ -66,7 +66,7 @@
 #X msg 843 382 0;
 #X msg 814 381 1;
 #X obj 385 162 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 12700 1;
 #X msg 835 239 1;
 #X msg 885 243 0;
 #X msg 152 179 127;
@@ -160,11 +160,12 @@
 #X connect 7 0 6 0;
 #X restore 406 356 pd cvtrig;
 #X obj 398 404 f 0.4;
+#X obj 425 294 change;
 #X connect 0 0 6 0;
 #X connect 0 1 7 0;
 #X connect 1 0 5 0;
 #X connect 2 0 37 0;
-#X connect 4 0 50 0;
+#X connect 4 0 52 0;
 #X connect 5 0 20 0;
 #X connect 5 1 19 0;
 #X connect 6 0 12 0;
@@ -182,7 +183,7 @@
 #X connect 19 0 18 0;
 #X connect 20 0 18 0;
 #X connect 21 0 37 0;
-#X connect 21 0 47 0;
+#X connect 21 0 50 0;
 #X connect 22 0 5 0;
 #X connect 23 0 5 0;
 #X connect 24 0 28 0;
@@ -208,3 +209,5 @@
 #X connect 49 0 36 0;
 #X connect 50 0 51 0;
 #X connect 51 0 46 0;
+#X connect 51 0 36 0;
+#X connect 52 0 50 0;
