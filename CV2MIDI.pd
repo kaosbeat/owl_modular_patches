@@ -83,7 +83,7 @@
 #X obj 523 402 change;
 #X msg 524 426 0.5, f 5;
 #X obj 386 349 change;
-#X obj 280 355 change;
+#X obj 283 370 change;
 #X obj 171 387 change;
 #X obj 704 348 change;
 #X obj 443 583 print change;
@@ -108,6 +108,8 @@
 #X connect 6 0 0 0;
 #X connect 7 0 6 0;
 #X restore 304 315 pd cvtrig;
+#X obj 285 345 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
 #X connect 0 0 6 0;
 #X connect 0 1 7 0;
 #X connect 1 0 5 0;
@@ -148,4 +150,5 @@
 #X connect 38 0 15 0;
 #X connect 39 0 14 0;
 #X connect 40 0 18 0;
-#X connect 42 0 15 0;
+#X connect 42 0 43 0;
+#X connect 43 0 38 0;
