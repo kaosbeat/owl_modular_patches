@@ -59,7 +59,7 @@
 #X obj 601 508 s CV_F @hv_param;
 #X msg 50 428 0.1;
 #X msg 163 426 0.2;
-#X msg 288 403 0.3;
+#X msg 283 502 0.3;
 #X msg 385 404 0.4;
 #X msg 598 429 0.6;
 #X msg 710 432 0.7;
@@ -67,7 +67,7 @@
 #X obj 815 420 change;
 #X msg 843 382 0;
 #X msg 814 381 1;
-#X obj 410 158 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 385 162 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 12700 1;
 #X msg 835 239 1;
 #X msg 885 243 0;
@@ -83,9 +83,9 @@
 #X obj 523 402 change;
 #X msg 524 426 0.5, f 5;
 #X obj 386 349 change;
-#X obj 283 370 change;
+#X obj 239 373 change;
 #X obj 171 387 change;
-#X obj 704 348 change;
+#X obj 704 396 change;
 #X obj 443 583 print change;
 #N canvas 736 229 450 300 cvtrig 0;
 #X obj 123 105 sel 1;
@@ -107,9 +107,15 @@
 #X connect 5 0 1 1;
 #X connect 6 0 0 0;
 #X connect 7 0 6 0;
-#X restore 304 315 pd cvtrig;
-#X obj 285 345 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X restore 299 304 pd cvtrig;
+#X obj 300 327 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
+#X floatatom 322 421 5 0 0 0 - - -, f 5;
+#X obj 298 354 sel 1;
+#X obj 317 388 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 286 387 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X connect 0 0 6 0;
 #X connect 0 1 7 0;
 #X connect 1 0 5 0;
@@ -121,7 +127,6 @@
 #X connect 7 0 39 0;
 #X connect 8 0 35 0;
 #X connect 9 0 34 0;
-#X connect 10 0 40 0;
 #X connect 13 0 12 0;
 #X connect 14 0 12 0;
 #X connect 15 0 12 0;
@@ -147,8 +152,13 @@
 #X connect 35 0 36 0;
 #X connect 36 0 12 0;
 #X connect 37 0 16 0;
-#X connect 38 0 15 0;
 #X connect 39 0 14 0;
 #X connect 40 0 18 0;
 #X connect 42 0 43 0;
-#X connect 43 0 38 0;
+#X connect 43 0 44 0;
+#X connect 43 0 45 0;
+#X connect 45 0 47 0;
+#X connect 45 1 46 0;
+#X connect 45 1 44 0;
+#X connect 46 0 15 0;
+#X connect 47 0 15 0;
