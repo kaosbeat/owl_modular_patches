@@ -152,7 +152,6 @@
 #X connect 35 0 36 0;
 #X connect 36 0 12 0;
 #X connect 37 0 16 0;
-#X connect 39 0 14 0;
 #X connect 40 0 18 0;
 #X connect 42 0 43 0;
 #X connect 43 0 44 0;
