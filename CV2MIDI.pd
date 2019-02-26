@@ -103,8 +103,6 @@ atm 1 CC msg for trig on \, one for trig off;
 #X connect 17 0 7 0;
 #X connect 18 0 7 0;
 #X connect 19 0 7 0;
-#X connect 20 0 7 0;
-#X connect 21 0 7 0;
 #X connect 22 0 7 0;
 #X connect 23 0 7 0;
 #X connect 24 0 25 0;
