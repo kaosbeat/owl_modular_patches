@@ -50,7 +50,7 @@
 #X restore 59 447 pd audiotrig;
 #X obj 695 276 r Channel-C;
 #X obj 803 277 r Channel-D;
-#X obj 426 407 r Channel-E;
+#X obj 427 405 r Channel-E;
 #X msg 56 293 0.1;
 #X msg 66 526 0.2;
 #X obj 985 101 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
@@ -361,7 +361,5 @@ atm 1 CC msg for trig on \, one for trig off;
 #X connect 46 0 13 0;
 #X connect 47 0 13 0;
 #X connect 48 0 13 0;
-#X connect 49 0 13 0;
-#X connect 50 0 13 0;
 #X connect 51 0 13 0;
 #X connect 52 0 13 0;
