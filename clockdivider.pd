@@ -29,8 +29,8 @@
 #X obj 132 174 sel 1;
 #X obj 157 275 hv.vline;
 #X msg 31 44 1;
-#X msg 70 239 1 0 \, 0 0 5;
 #X msg 157 239 1 0 \, 0 0 10;
+#X msg 70 239 1 0 \, 0 0 15;
 #X connect 0 0 1 0;
 #X connect 2 0 27 0;
 #X connect 3 0 7 0;
@@ -64,9 +64,9 @@
 #X connect 23 0 22 0;
 #X connect 24 0 25 0;
 #X connect 25 0 10 0;
-#X connect 25 0 28 0;
 #X connect 25 0 29 0;
+#X connect 25 0 28 0;
 #X connect 26 0 1 1;
 #X connect 27 0 3 0;
-#X connect 28 0 0 0;
-#X connect 29 0 26 0;
+#X connect 28 0 26 0;
+#X connect 29 0 0 0;
