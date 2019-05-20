@@ -1,6 +1,6 @@
 #N canvas 721 244 978 575 10;
-#X obj 74 326 hv.vline;
-#X obj 78 403 dac~;
+#X obj 102 395 hv.vline;
+#X obj 106 472 dac~;
 #X obj 31 23 r Channel-Push;
 #X obj 292 39 hsl 128 15 0 1 0 0 empty empty divider_L -2 -8 0 10 -262144
 -1 -1 0 1;
@@ -21,14 +21,23 @@
 -1;
 #X obj 150 123 mod 0;
 #X obj 117 122 + 1;
-#X obj 84 234 sel 0;
+#X obj 75 191 sel 0;
 #X obj 533 33 hsl 128 15 0 1 0 0 empty empty divider_L -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 3100 1;
 #X obj 534 109 int;
 #X obj 544 58 r Channel-B;
-#X obj 531 132 + 10;
-#X obj 534 84 * 128;
-#X msg 83 272 10 0 \, 0 0 1;
+#X msg 98 335 \$1 0 \, 0 0 \$2;
+#X obj 195 231 f 0;
+#X obj 159 231 f 0;
+#X obj 155 291 pack f f;
+#X obj 700 32 hsl 128 15 0 1 0 0 empty empty divider_L -2 -8 0 10 -262144
+-1 -1 6600 1;
+#X obj 701 108 int;
+#X obj 711 57 r Channel-B;
+#X obj 698 131 + 10;
+#X obj 701 83 * 128;
+#X obj 537 82 * 20;
+#X obj 270 338 print vals;
 #X connect 0 0 1 0;
 #X connect 2 0 17 0;
 #X connect 3 0 8 0;
@@ -56,9 +65,20 @@
 #X connect 17 0 5 0;
 #X connect 18 0 20 0;
 #X connect 19 0 5 1;
+#X connect 20 0 24 0;
 #X connect 20 0 26 0;
-#X connect 21 0 25 0;
-#X connect 22 0 24 0;
-#X connect 23 0 25 0;
-#X connect 25 0 22 0;
-#X connect 26 0 0 0;
+#X connect 20 0 25 0;
+#X connect 21 0 33 0;
+#X connect 22 0 26 1;
+#X connect 23 0 33 0;
+#X connect 24 0 0 0;
+#X connect 25 0 27 1;
+#X connect 26 0 27 0;
+#X connect 27 0 24 0;
+#X connect 27 0 34 0;
+#X connect 28 0 32 0;
+#X connect 29 0 31 0;
+#X connect 30 0 32 0;
+#X connect 31 0 25 1;
+#X connect 32 0 29 0;
+#X connect 33 0 22 0;
