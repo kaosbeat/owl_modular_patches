@@ -1,14 +1,16 @@
-#N canvas 1193 507 599 301 10;
-#X obj 51 181 hv.vline;
+#N canvas 972 250 714 513 10;
+#X obj 53 276 hv.vline;
 #X obj 52 101 metro 500;
 #X obj 52 50 loadbang;
-#X msg 51 142 1 0 \, 0 0 20;
-#X obj 57 232 dac~;
+#X msg 53 237 1 0 \, 0 0 20;
+#X obj 59 327 dac~;
 #X obj 142 129 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 120 63 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 213 123 s \$0-trigger;
+#X obj 166 46 r Channel-Push;
+#X obj 155 87 sel 1;
 #X connect 0 0 4 0;
 #X connect 1 0 3 0;
 #X connect 1 0 5 0;
@@ -16,3 +18,5 @@
 #X connect 2 0 1 0;
 #X connect 3 0 0 0;
 #X connect 6 0 1 0;
+#X connect 8 0 9 0;
+#X connect 9 0 3 0;
