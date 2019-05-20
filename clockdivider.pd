@@ -21,16 +21,14 @@
 -1;
 #X obj 150 123 mod 0;
 #X obj 117 122 + 1;
-#X obj 69 190 sel 0;
-#X obj 227 385 print adsfg;
-#X obj 74 268 f 20;
+#X obj 84 234 sel 0;
 #X obj 533 33 hsl 128 15 0 1 0 0 empty empty divider_L -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 534 109 int;
 #X obj 544 58 r Channel-B;
 #X obj 531 132 + 10;
 #X obj 534 84 * 128;
-#X msg 78 294 1 0 \, 0 0 \$1;
+#X msg 83 272 10 0 \, 0 0 1;
 #X connect 0 0 1 0;
 #X connect 2 0 17 0;
 #X connect 3 0 8 0;
@@ -58,12 +56,9 @@
 #X connect 17 0 5 0;
 #X connect 18 0 20 0;
 #X connect 19 0 5 1;
-#X connect 20 0 22 0;
-#X connect 22 0 28 0;
-#X connect 23 0 27 0;
-#X connect 24 0 26 0;
-#X connect 25 0 27 0;
-#X connect 26 0 22 1;
-#X connect 27 0 24 0;
-#X connect 28 0 0 0;
-#X connect 28 0 21 0;
+#X connect 20 0 26 0;
+#X connect 21 0 25 0;
+#X connect 22 0 24 0;
+#X connect 23 0 25 0;
+#X connect 25 0 22 0;
+#X connect 26 0 0 0;
