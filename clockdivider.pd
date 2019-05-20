@@ -7,16 +7,16 @@
 #X obj 47 38 r Channel-Push;
 #X obj 47 75 sel 1;
 #X obj 292 39 hsl 128 15 0 1 0 0 empty empty Gain -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 5600 1;
 #X obj 303 64 r Channel-A;
 #X obj 293 93 s \$0-gain;
 #X text -60 345 unaltered clock;
 #X obj 90 151 f 0;
 #X obj 92 176 + 1;
-#X floatatom 110 208 5 0 0 0 - - -, f 5;
+#X floatatom 84 200 5 0 0 0 - - -, f 5;
 #X obj 84 100 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X msg 123 176 0;
+#X msg 138 196 0;
 #X floatatom 354 149 5 0 0 0 - - -, f 5;
 #X obj 290 185 int;
 #X obj 305 210 select 0 1 2 3 4 5 6 7;
@@ -30,12 +30,15 @@
 #X obj 465 242 f 32;
 #X obj 503 242 f 64;
 #X obj -59 327 s Channel-Push;
-#X obj 125 152 select 1;
+#X obj -12 255 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 125 152 == 0;
+#X obj 132 174 sel 1;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
 #X connect 4 0 5 0;
-#X connect 5 0 27 0;
 #X connect 5 0 10 0;
+#X connect 5 0 28 0;
 #X connect 6 0 8 0;
 #X connect 6 0 18 0;
 #X connect 7 0 8 0;
@@ -43,7 +46,7 @@
 #X connect 10 0 11 0;
 #X connect 11 0 12 0;
 #X connect 11 0 10 1;
-#X connect 11 0 28 0;
+#X connect 11 0 29 0;
 #X connect 13 0 10 0;
 #X connect 14 0 10 1;
 #X connect 16 0 15 0;
@@ -57,13 +60,15 @@
 #X connect 17 6 25 0;
 #X connect 17 7 26 0;
 #X connect 18 0 16 0;
-#X connect 19 0 28 1;
-#X connect 20 0 28 1;
-#X connect 21 0 28 1;
-#X connect 22 0 28 1;
-#X connect 23 0 28 1;
-#X connect 24 0 28 1;
-#X connect 25 0 28 1;
-#X connect 26 0 28 1;
-#X connect 28 0 1 0;
-#X connect 28 0 14 0;
+#X connect 19 0 29 1;
+#X connect 20 0 29 1;
+#X connect 21 0 29 1;
+#X connect 22 0 29 1;
+#X connect 23 0 29 1;
+#X connect 24 0 29 1;
+#X connect 25 0 29 1;
+#X connect 26 0 29 1;
+#X connect 28 0 27 0;
+#X connect 29 0 30 0;
+#X connect 30 0 14 0;
+#X connect 30 0 1 0;
