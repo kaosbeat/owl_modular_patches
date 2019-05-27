@@ -16,9 +16,9 @@
 #X obj 543 291 pow;
 #X msg 254 494 0;
 #X obj 236 697 phasor~ 0;
-#X obj 153 168 hsl 128 15 0 105552 0 0 \$0-start-s \$0-start start
+#X obj 153 168 hsl 128 15 0 160032 0 0 \$0-start-s \$0-start start
 2 8 0 10 -262144 -258113 -1 0 1;
-#X obj 153 185 hsl 128 15 0 105552 0 0 \$0-stop-s \$0-stop end 2 8
+#X obj 153 185 hsl 128 15 0 160032 0 0 \$0-stop-s \$0-stop end 2 8
 0 10 -262144 -258113 -1 12700 1;
 #X obj 237 736 *~ 1;
 #X obj 840 738 table \$0-sample 4.41e+06;
@@ -153,7 +153,7 @@
 #X msg 164 856 1;
 #X msg 206 856 0;
 #X obj 153 102 hsl 90 15 0 1 0 0 empty \$0-pos position 2 7 0 10 -228856
--1 -1 6298 1;
+-1 -1 2145 1;
 #X obj 74 800 s \$0-pos;
 #X obj 74 770 snapshot~;
 #X obj 74 734 metro 10;
@@ -363,11 +363,6 @@
 #X connect 8 5 10 0;
 #X connect 10 0 9 0;
 #X restore 17 500 pd set_length;
-#X msg 55 435 read \$1 \$2;
-#X obj 21 322 symbol;
-#X obj 21 344 t s b;
-#X obj 48 369 symbol \$0-sample;
-#X obj 21 394 pack s s;
 #X obj 34 281 symbol;
 #X connect 0 0 4 0;
 #X connect 1 0 5 0;
@@ -419,8 +414,7 @@
 #X connect 46 1 13 0;
 #X connect 46 2 40 0;
 #X connect 46 3 22 0;
-#X connect 47 0 117 0;
-#X connect 47 1 113 0;
+#X connect 47 0 112 0;
 #X connect 47 2 78 0;
 #X connect 48 0 60 1;
 #X connect 48 0 67 0;
@@ -494,9 +488,4 @@
 #X connect 109 0 52 0;
 #X connect 110 0 111 0;
 #X connect 111 0 52 0;
-#X connect 113 0 114 0;
-#X connect 114 0 116 0;
-#X connect 114 1 115 0;
-#X connect 115 0 116 1;
-#X connect 116 0 112 0;
-#X connect 117 0 110 0;
+#X connect 112 0 110 0;
