@@ -1,4 +1,4 @@
-#N canvas 193 347 1550 686 10;
+#N canvas 245 182 1550 686 10;
 #X obj 102 103 cnv 15 182 110 empty empty pushdelay~ 4 8 0 14 -233017
 -66577 0;
 #N canvas 0 54 1366 686 curve_abs 0;
@@ -129,7 +129,7 @@
 #X obj 310 234 env~;
 #X obj 310 274 dbtorms;
 #X obj 310 300 spigot;
-#X obj 385 285 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 385 285 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 310 391 max;
 #X obj 325 325 t b;
